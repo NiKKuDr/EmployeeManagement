@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="app" class="container">
+        <h3 class="d-flex justify-content-center">
+            Vue JS Front End
+        </h3>
+        <h5 class="d-flex justify-content-center">
+            Employee Management Portal
+        </h5>
+
+        <nav class="navbar navbar-expand-sm bg-light navbar-dark justify-content-center">
+            <ul class="navbar-nav">
+            <li class="nav-item m-1">
+                <router-link class="btn btn-light btn-outline-primary"
+                to="/home">Home</router-link>
+            </li>
+            <li class="nav-item m-1">
+                <router-link class="btn btn-light btn-outline-primary"
+                to="/department">Department</router-link>
+            </li>
+            <li class="nav-item m-1">
+                <router-link class="btn btn-light btn-outline-primary"
+                to="/employee">Employee</router-link>
+            </li>
+            </ul>
+        </nav>
+        <div>
+            <a href="http://www.showmyweather.com/" title="Show My Weather Forecast" onclick="window.open(this.href);return(false);"><script type="text/javascript" src="http://www.showmyweather.com/weather_widget.php?int=0&type=js&country=us&state=Pennsylvania&city=Pittsburgh&smallicon=0&current=1&forecast=1&background_color=ffffff&color=000000&width=175&padding=10&border_width=1&border_color=000000&font_size=11&font_family=Verdana&showicons=1&measure=F&d=2022-04-20"></script></a><div style="width:197px;text-align:center;font-size:0.6em;margin-top:0.5em;"></div>
+            <div>
+                <link type="text/css" rel="stylesheet" href="https://www.meteoprog.ua/css/winformer.min.css?id=100">
+
+                <div class="meteoprog-informer" style="width: 258px" data-params='{"city_ids":"1834","domain":"https://www.meteoprog.ua/en/","id":"62601a132bac9209328b4a53","lang":"en"}'>
+            
+                  
+                    <a title="Weather in city of Pittsburgh" target="_blank" href="https://www.meteoprog.ua/en/weather/Pittsburgh/">
+                      <img style="margin: 0 auto; display: block" src="https://www.meteoprog.ua/images/preloader.gif" alt="Loading...">
+                    </a>
+                    <a target="_blank" class="constructor__met2wlink" href="https://www.meteoprog.ua/en/review/Pittsburgh/">Weather For 2 Weeks</a>
+                  
+            
+                  <a class="constructor__metlink" target="_blank" href="https://www.meteoprog.ua/en/">
+                    <img style="display: block; margin: 0 auto;" alt="Meteoprog" src="https://www.meteoprog.ua/images/meteoprog-inf.png">
+                  </a>
+                </div>
+                <script type="text/javascript" src="https://www.meteoprog.ua/js/winformer.min.js?id=100"></script>
+
+                
+                <a class="weatherwidget-io" href="https://forecast7.com/en/40d44n80d00/pittsburgh/" data-label_1="PITTSBURGH" data-label_2="WEATHER" >PITTSBURGH WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+            </div>
+        </div>
+        <router-view></router-view>
+    </div>
+
+    <script src="variables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="home.js"></script>
+    <script src="department.js"></script>
+    <script src="employee.js"></script>
+    <script src="app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
